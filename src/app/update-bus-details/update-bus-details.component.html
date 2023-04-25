@@ -1,0 +1,49 @@
+<section>
+<div class="col-md-6 offset-md-3">
+    <h3> Update BusDetails </h3>
+    <form (ngSubmit) = "onSubmit()">
+
+        <div class="form-group">
+            <label>Starting Point</label>
+            <input type="text" class ="form-control" id = "startingPoint"
+                [(ngModel)] = "busDetails.startingPoint" name = "startingPoint">
+        </div>
+
+        <div class="form-group">
+            <label>Driver Name</label>
+            <input type="text" class ="form-control" id = "driverName"
+                [(ngModel)] = "busDetails.driverName" name = "driverName">
+        </div>
+
+        <div class="form-group">
+            <label> Ending Point</label>
+            <input type="text" class ="form-control" id = "endingPoint"
+                [(ngModel)] = "busDetails.endingPoint" name = "endingPoint">
+        </div>
+        <div class="form-group">
+            <label> Driver Number</label>
+            <input type="text" class ="form-control" id = "driverNumber"
+                [(ngModel)] = "busDetails.driverNumber" name = "driverNumber">
+        </div>
+        <div class="form-group">
+            <label>Bus Id</label>
+            <input type="text" class ="form-control" id = "busId"
+                [(ngModel)] = "busDetails.busId" name = "busId">
+        </div>
+        <div class="form-group">
+            <label> Bus Number</label>
+            <input type="text" class ="form-control" id = "busNumber"
+                [(ngModel)] = "busDetails.busNumber" name = "busNumber">
+        </div>
+        <div class="form-group">
+            <label> Bus Type</label>
+            <input type="text" class ="form-control" id = "busType"
+                [(ngModel)] = "busDetails.busType" name = "busType">
+        </div>
+
+        <button class = "btn btn-success" type ="submit">Submit</button>
+
+    </form>
+
+    </div>
+</section>
