@@ -1,0 +1,73 @@
+
+<div class="col-md-6 offset-md-3">
+    <h3> Seats Details </h3>
+    <form (ngSubmit) = "onSubmit()">
+        
+        <div class="form-group">
+            <label> StartingPoint</label>
+            <input type="text" readonly class ="form-control" id = "startingPoint"
+                [(ngModel)] = "busDetails.startingPoint" name = "startingPoint">
+        </div>
+
+        <div class="form-group">
+            <label> DriverName</label>
+            <input type="text" readonly class ="form-control" id = "driverName"
+                [(ngModel)] = "busDetails.driverName" name = "driverName">
+        </div>
+
+        <div class="form-group">
+            <label> EndingPoint</label>
+            <input type="text" readonly class ="form-control" id = "endingPoint"
+                [(ngModel)] = "busDetails.endingPoint" name = "endingPoint">
+        </div>
+        <div class="form-group">
+            <label> DriverNumber</label>
+            <input type="text" readonly class ="form-control" id = "driverNumber"
+                [(ngModel)] = "busDetails.driverNumber" name = "driverNumber">
+        </div>
+       
+        <div class="form-group">
+            <label> BusNumber</label>
+            <input type="text" readonly class ="form-control" id = "busNumber"
+                [(ngModel)] = "busDetails.busNumber" name = "busNumber">
+        </div>
+        <div class="form-group">
+            <label> BusType</label>
+            <input type="text" readonly class ="form-control" id = "busType"
+                [(ngModel)] = "busDetails.busType" name = "busType">
+        </div>
+    
+        <div class="form-group">
+            <label> Total seats Avaiable</label>
+            <input type="text"  class ="form-control" id = "noOfSeats"
+                [(ngModel)] = "busDetails.noOfSeats" name = "noOfSeats">
+        </div>
+        <div class="form-group">
+            <label>Cost Per Seats</label>
+            <input type="text"  class ="form-control" id = "costPerSeats"
+                [(ngModel)] = "busDetails.costPerSeats" name = "costPerSeats">
+        </div>
+       <!---- <label for="bookedSeats">Booked Seats:</label>
+  <select name="bookedSeats" id="bookedSeats">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+</select>-->
+
+<div class="form-group">
+    <label> Number of Seats </label>
+    <input type="number" class="form-control" id="bookedSeats" [(ngModel)]="busDetails.bookedSeats"
+        name="seatsEntered">
+</div>
+<button (click)="myFunction()" id="btn" style="margin-top:50px;font-size:15px;">Update</button>
+<button class="btn btn-success" type="submit" (click)="onSubmit()">Submit</button>
+<div class="form-group">
+    <label> Total Price</label>
+    <input type="text" class ="form-control" id = "totalprice"
+        [(ngModel)] = "busDetails.totalprice" name = "totalprice">
+</div>
+<br>
+<button class = "btn btn-primary" type ="submit">Submit</button>
+    </form>
+    </div>
